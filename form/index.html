@@ -8,17 +8,17 @@
 <body>
     <main>
         <form>
-            <p><input type="text">Имя</p>
-            <p><input type="tel">Телефон</p>
-            <p><input type="email">Email</p>
-            <p><input type="password">Пароль</p>
+            <p><label><input type="text" required>Имя</label></p>
+            <p><label><input type="tel" required>Телефон</label></p>
+            <p><label><input type="email" required>Email</label></p>
+            <p><label><input type="password" required>Пароль</label></p>
             <p>Операционная система:
                 <br/>
                 <input type="radio" name="browser" value="linuks">Linuks 
                 <input type="radio" name="browser" value="mac_os">Mac OS
                 <input type="radio" name="browser" value="windows">Windows
             </p>
-            <p><textarea cols="30" rows="10"></textarea></p>
+            <p><textarea cols="30" rows="10" placeholder="Комментарий." required></textarea></p>
             <p><input type="submit" value="Отправить форму"></p>
             <p><input type="reset" value="Сбросить форму"></p>
         </form>
