@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
+
 <body>
     <main>
         <form>
-            <p><label><input type="text" required>Имя</label></p>
-            <p><label><input type="tel" required>Телефон</label></p>
-            <p><label><input type="email" required>Email</label></p>
-            <p><label><input type="password" required>Пароль</label></p>
-            <p>Операционная система:
-                <br/>
-                <input type="radio" name="browser" value="linuks">Linuks 
-                <input type="radio" name="browser" value="mac_os">Mac OS
-                <input type="radio" name="browser" value="windows">Windows
-            </p>
-            <p><textarea cols="30" rows="10" placeholder="Комментарий." required></textarea></p>
+            <h1>Форма заявки участника</h1>
+            <h3>Личные данные</h3>
+            <div>
+                <p><label><input type="text" required>Имя</label></p>
+                <p><label><input type="tel" required>Телефон</label></p>
+                <p><label><input type="email" required>Email</label></p>
+                <p><label><input type="password" required>Пароль</label></p>
+            </div>
+            <div>
+                <h3>Выбор операционной системы</h3>
+                <p>Операционная система:
+                    <br />
+                    <input type="radio" name="browser" value="linuks">Linuks
+                    <input type="radio" name="browser" value="mac_os">Mac OS
+                    <input type="radio" name="browser" value="windows">Windows
+                </p>
+                <p><textarea cols="30" rows="10" placeholder="Объясните свой выбор." required></textarea></p>
+            </div>
             <p><input type="submit" value="Отправить форму"></p>
             <p><input type="reset" value="Сбросить форму"></p>
         </form>
     </main>
 </body>
+
 </html>
